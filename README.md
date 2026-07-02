@@ -1,42 +1,42 @@
 # Gameboxd
 
-Final Project for Android Development Course.
+ფინალური პროექტი Android Development კურსისთვის.
 
-Gameboxd is an Android application for tracking and managing a video game backlog. It is built using Kotlin and follows modern Android development practices, specifically the MVVM architecture and Room Database. The app features a dark, retro 8-bit aesthetic.
+Gameboxd არის Android აპლიკაცია, რომელიც შექმნილია ვიდეო თამაშების ბექლოგის (დასასრულებელი თამაშების სიის) სამართავად. პროექტი დაწერილია Kotlin-ზე და იყენებს თანამედროვე Android პრაქტიკებს — MVVM არქიტექტურასა და Room Database-ს. აპლიკაციას აქვს მუქი, რეტრო 8-bit დიზაინი.
 
-## Features
+## ფუნქციონალი
 
-- Add, edit, and delete games from your backlog.
-- Change game status (Backlog, Playing, Finished).
-- Rate finished games (1-5 stars).
-- Custom drag-and-drop ordering to prioritize games.
-- Sort games alphabetically or by rating.
-- "Pick Random Game" feature to help you decide what to play next.
-- Filter games by their current status.
-- Swipe-to-delete with Undo functionality.
+- თამაშების დამატება, რედაქტირება და წაშლა.
+- თამაშის სტატუსის მართვა (Backlog, Playing, Finished).
+- დასრულებული თამაშების შეფასება 1-დან 5 ვარსკვლავამდე.
+- Drag-and-drop გადათრევა თამაშების ხელით დასალაგებლად.
+- თამაშების სორტირება ანბანის ან რეიტინგის მიხედვით.
+- "Pick Random Game" ფიჩერი, რომელიც გეხმარებათ მარტივად აირჩიოთ შემდეგი თამაში სათამაშოდ.
+- სტატუსის მიხედვით სიის გაფილტვრა (Toolbar-ის მენიუდან).
+- მარცხნივ გადაფურცვლით წაშლა (Swipe-to-delete) Undo-ს (დაბრუნების) ფუნქციით.
 
-## Technical Details
+## ტექნიკური დეტალები
 
-- **Architecture:** MVVM (Model-View-ViewModel) with Repository pattern.
-- **Database:** Room Database (SQLite ORM).
-- **UI:** Exclusively uses ViewBinding (no findViewById). 
-- **Asynchronous Operations:** Kotlin Coroutines and Flow for reactive database queries.
-- **List Management:** RecyclerView with ListAdapter and DiffUtil for efficient UI updates. ItemTouchHelper for drag & drop and swipe gestures.
+- **არქიტექტურა:** MVVM (Model-View-ViewModel) Repository პატერნით.
+- **მონაცემთა ბაზა:** Room Database (SQLite ORM).
+- **UI:** ექსკლუზიურად გამოიყენება ViewBinding (პროექტში არსად არ არის findViewById).
+- **ასინქრონული ოპერაციები:** Kotlin Coroutines და Flow რეაქტიული მონაცემების წამოსაღებად.
+- **სიის მართვა:** RecyclerView, ListAdapter და DiffUtil ეკრანის ოპტიმალური განახლებისთვის. ItemTouchHelper drag & drop და swipe ჟესტებისთვის.
 
-## Project Structure
+## პროექტის სტრუქტურა
 
-- `data/`: Contains Room Database components (`Game` entity, `GameDao`, `GameDatabase`).
-- `repository/`: Contains `GameRepository` as the single source of truth.
-- `viewmodel/`: Contains `GameViewModel` for UI state management.
-- `adapter/`: Contains `GameAdapter` and `GameTouchHelper`.
-- `ui/`: Contains `AddGameDialogFragment` for adding and editing games.
-- `MainActivity.kt`: Main entry point handling the RecyclerView and toolbar menus.
+- `data/`: შეიცავს Room Database კომპონენტებს (`Game` entity, `GameDao`, `GameDatabase`).
+- `repository/`: შეიცავს `GameRepository`-ს, რომელიც მონაცემთა ერთადერთი წყაროა.
+- `viewmodel/`: შეიცავს `GameViewModel`-ს UI-ს სტეიტის სამართავად.
+- `adapter/`: შეიცავს `GameAdapter`-ს და `GameTouchHelper`-ს.
+- `ui/`: შეიცავს `AddGameDialogFragment` დიალოგს თამაშების დასამატებლად და დასარედაქტირებლად.
+- `MainActivity.kt`: მთავარი კლასი, რომელიც აკავშირებს RecyclerView-ს და მენიუს.
 
-## Setup Instructions
+## პროექტის გაშვება
 
-1. Clone this repository.
-2. Open the project in Android Studio.
-3. Allow Gradle to sync.
-4. Run the app on an emulator or a physical device.
+1. დააკლონეთ (Clone) ეს რეპოზიტორია ლოკალურად.
+2. გახსენით პროექტი Android Studio-ში.
+3. დაელოდეთ Gradle-ის სინქრონიზაციას.
+4. გაუშვით აპლიკაცია ემულატორზე ან ფიზიკურ მოწყობილობაზე (Run).
 
-Minimum API level required: 24.
+მინიმალური API დონე (Min SDK): 24.
