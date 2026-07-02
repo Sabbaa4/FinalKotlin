@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- თამაშის დამატება/რედაქტირების დიალოგის განლაგება -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/retro_dark">
+
+    <!-- თამაშის სათაურის შეყვანის ველი -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputTitle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/game_title"
+        app:boxStrokeColor="?attr/colorOnSurface"
+        app:hintTextColor="@color/retro_green"
+        android:textColorHint="@color/retro_text_secondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/retro_text_primary"
+            android:fontFamily="monospace"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- პლატფორმის შეყვანის ველი -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPlatform"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/game_platform"
+        app:boxStrokeColor="?attr/colorOnSurface"
+        app:hintTextColor="@color/retro_green"
+        android:textColorHint="@color/retro_text_secondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPlatform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/retro_text_primary"
+            android:fontFamily="monospace"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- სტატუსის არჩევის Spinner (Backlog / Playing / Finished) -->
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/retro_card"
+        android:popupBackground="@color/retro_card" />
+
+    <!-- რეიტინგის სექცია — ტექსტი და 5 ვარსკვლავი -->
+    <TextView
+        android:id="@+id/ratingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rating_label"
+        android:textColor="@color/retro_text_secondary"
+        android:textSize="14sp"
+        android:fontFamily="monospace" />
+
+    <!-- ვარსკვლავებით რეიტინგის შეყვანა -->
+    <LinearLayout
+        android:id="@+id/ratingContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/ratingStar1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="Rating star 1" />
+
+        <ImageView
+            android:id="@+id/ratingStar2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="Rating star 2" />
+
+        <ImageView
+            android:id="@+id/ratingStar3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="Rating star 3" />
+
+        <ImageView
+            android:id="@+id/ratingStar4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="Rating star 4" />
+
+        <ImageView
+            android:id="@+id/ratingStar5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="Rating star 5" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- მთავარი მენიუ — ფილტრაციის ქვემენიუთ -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ფილტრის ღილაკი ქვემენიუთ -->
+    <item
+        android:id="@+id/action_filter"
+        android:title="@string/filter"
+        app:showAsAction="ifRoom">
+
+        <!-- ფილტრაციის ვარიანტები -->
+        <menu>
+            <item
+                android:id="@+id/filter_all"
+                android:title="@string/all_games" />
+            <item
+                android:id="@+id/filter_backlog"
+                android:title="@string/status_backlog" />
+            <item
+                android:id="@+id/filter_playing"
+                android:title="@string/status_playing" />
+            <item
+                android:id="@+id/filter_finished"
+                android:title="@string/status_finished" />
+        </menu>
+
+    </item>
+
+    <!-- სორტირების მენიუ -->
+    <item
+        android:id="@+id/action_sort"
+        android:title="@string/action_sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/sort_rating"
+                android:title="@string/sort_rating" />
+            <item
+                android:id="@+id/sort_title"
+                android:title="@string/sort_title" />
+        </menu>
+    </item>
+
+    <!-- რა ვითამაშო -->
+    <item
+        android:id="@+id/action_random"
+        android:title="@string/action_random"
+        app:showAsAction="never" />
+
+</menu>

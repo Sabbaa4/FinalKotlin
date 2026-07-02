@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gameboxd რეტრო თემა — მუქი ფონი მწვანე აქცენტებით -->
+<resources>
+    <style name="Theme.Gameboxd" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- ძირითადი ფერები -->
+        <item name="colorPrimary">@color/retro_green</item>
+        <item name="colorPrimaryVariant">@color/retro_green_dark</item>
+        <item name="colorOnPrimary">@color/retro_black</item>
+
+        <!-- მეორადი ფერები -->
+        <item name="colorSecondary">@color/retro_cyan</item>
+        <item name="colorOnSecondary">@color/retro_black</item>
+
+        <!-- ფონი და ზედაპირი -->
+        <item name="android:colorBackground">@color/retro_black</item>
+        <item name="colorSurface">@color/retro_dark</item>
+        <item name="colorOnSurface">@color/retro_text_primary</item>
+
+        <!-- სისტემური ზოლები -->
+        <item name="android:statusBarColor">@color/retro_black</item>
+        <item name="android:navigationBarColor">@color/retro_black</item>
+        <item name="android:windowBackground">@color/retro_black</item>
+    </style>
+</resources>

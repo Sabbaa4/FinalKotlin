@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gameboxd აპლიკაციის ტექსტური რესურსები -->
+<resources>
+    <string name="app_name">Gameboxd</string>
+    <string name="add_game">Add Game</string>
+    <string name="edit_game">Edit Game</string>
+    <string name="game_title">Game Title</string>
+    <string name="game_platform">Platform</string>
+    <string name="game_status">Status</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="filter">Filter</string>
+    <string name="all_games">ყველა</string>
+    <string name="empty_list_message">No games yet!\nTap + to add your first game.</string>
+    <string name="status_backlog">Backlog</string>
+    <string name="status_playing">Playing</string>
+    <string name="status_finished">Finished</string>
+    <string name="rating_label">Rating:</string>
+    <string name="drag_hint">Hold and drag to reorder</string>
+    
+    <!-- New Menu Strings -->
+    <string name="action_sort">Sort</string>
+    <string name="sort_rating">By Rating (High to Low)</string>
+    <string name="sort_title">By Title (A-Z)</string>
+    <string name="action_random">Pick Random Game</string>
+    <string name="random_game_title">We recommend playing:</string>
+    <string name="random_game_empty">Your Backlog is empty! Add games first.</string>
+    <string name="play_now">Play Now</string>
+    <string name="ok">OK</string>
+</resources>
